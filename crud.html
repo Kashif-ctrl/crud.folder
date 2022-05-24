@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>crud oprations</title>
+</head>
+
+<body>
+    
+    <table class="tb">
+        
+            <td>
+
+                <form onsubmit="event.preventDefault(); onFormSubmit();">
+                    <div>
+                        <h1>CRUD OPRATION</h1>
+                    </div>
+                    <div>
+                        <!-- <label class="validatin-error " id="fullNamevalidationError" hidden> This field is required</label> -->
+                        <label>Full name</label>
+                        <input type="text" name="fullName" required id="fullName" autocomplete="off" placeholder="Name">
+                    </div>
+                    <div>
+                        <label>Emp code</label>
+                        <input type="text" name="empCode" required id="empCode" autocomplete="off" placeholder="Emp Code">
+                    </div>
+                    <div>
+                        <label>Salry</label>
+                        <input type="number" name="salry" required id="salry" autocomplete="off" placeholder="Salry">
+                    </div>
+                    <div>
+                        <label>city</label>
+                        <input type="text" name="city" required id="city" autocomplete="off" placeholder="City">
+                    </div>
+                    <br>
+                    <div class="form-action-button">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+
+
+
+            <td>
+                <table class="list" id="employeList">
+                    <thead>
+                        <tr>
+                            <th>Full name</th>
+                            <th>Emp code</th>
+                            <th>Salry</th>
+                            <th>city</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </td>
+
+        </table>        
+    
+    <script src="curd.js"></script>
+</body>
+
+</html>
